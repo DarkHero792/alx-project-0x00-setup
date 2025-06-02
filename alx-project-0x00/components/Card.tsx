@@ -4,8 +4,16 @@ import STAR_IMAGE from "@/public/assets/images/star.png"
 import React from "react"
 import Pill from "./Pill"
 
+interface CardProps {
+  title: string;
+  description: string;
+  price: number;
+  rating: number;
+}
 
-const Card: React.FC = () => {
+
+const Card: React.FC<CardProps> = ({ title, description, price, rating }) => {
+
 
  return (
     <div className="h-[422px] w-[378.56px] cursor-pointer hover:shadow-md hover:rounded-lg ">
@@ -59,7 +67,7 @@ const Card: React.FC = () => {
           </div>
         </div>
         <p className=" text-[22px] font-semibold">$2,450<span className=" text-[14px] text-[#787878]">/n</span></p>
-
+           
       </div>
     </div>
   )
