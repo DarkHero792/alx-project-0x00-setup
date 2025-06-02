@@ -39,6 +39,13 @@ const Landing: React.FC = () => {
           <Button title="Large - md" styles="text-lg px-6 py-3 rounded-md bg-red-500 text-white" />
           <Button title="Large - full" styles="text-lg px-6 py-3 rounded-full bg-red-500 text-white" />
         </div>
+
+        {/* Rounded-lg Buttons */}
+        <div className="space-x-4">
+          <Button title="Small - lg" styles="text-sm px-4 py-2 rounded-lg bg-purple-500 text-white" />
+          <Button title="Medium - lg" styles="text-base px-5 py-2 rounded-lg bg-purple-500 text-white" />
+          <Button title="Large - lg" styles="text-lg px-6 py-3 rounded-lg bg-purple-500 text-white" />
+        </div>
       </div>
     </div>
   );
